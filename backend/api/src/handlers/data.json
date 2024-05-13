@@ -1,0 +1,9 @@
+{
+  "image1": "https://example.com/path/to/image.jpg",
+  "table2": {
+    "var1": 100,
+    "var2": 200,
+    "result": "Sum: {var1} + {var2} = {sum}"
+  },
+  "pdf3": "https://example.com/path/to/document.pdf"
+}

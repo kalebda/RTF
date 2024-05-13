@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    command: "./dev_start.sh"
+    ports:
+      - "9003:5000" ## handled via proxy service below
+    volumes:
+      - ./api:/app
+    environment:
+      WORKERS_PER_CORE: 1
+      DEPLOYMENT: dev
